@@ -42,14 +42,22 @@ see the test directory for complete working examples
 # chrome extension
 
   the extension is currently built for chrome based browsers on windows
+  
   download the repository https://github.com/javascript-2020/simple-nativemessage
+  
   open *chrome://extensions*
+  
   in the top right, switch to developer mode
+  
   click load unpacked
+  
   navigate to *test/ext* and select folder
+  
   copy the extension id
-  paste the extension id into allow_origins value in *test/ext/nmhost/nmhost-manifest.json*
+  
+  paste the extension id into allow_origins value in *test/ext/nmhost/nmhost-manifest.json*  
   if using externall connectable ( see below ) paste the extension id into *test/webpage/index.html*
+  
   run *ext/nmhost/install-nmhost.bat* as administrator
   
   to use the externally connectable extension interface, the webpage must be served from
