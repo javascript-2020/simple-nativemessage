@@ -91,10 +91,11 @@ specifying the location of ***example/ext/nmhost/nmhost-manifest.json***
 
 <br/>
 
-### 5. optional, connect from webpage
+### 5. optional, extension connection from a webpage
 
-to use the externally connectable extension interface, which allows a webpage to communicate directly with the extension,
-the webpage must be served from at least a second level domain, for local servers this means editing the hosts file
+to use the externally connectable extension interface, which allows a webpage to communicate directly with an extension,
+the webpage must be served from at least a second level domain, for local servers this means 
+creating a dns record -- ie editing the hosts file
 
 https://developer.chrome.com/docs/extensions/mv3/manifest/externally_connectable/
 

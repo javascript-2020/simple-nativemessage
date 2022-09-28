@@ -24,7 +24,7 @@
 
             // must be escaped backslash or forward slash
             
-            //"path"              : "c:/full/path/nmhost.bat"
+            //"path"              : "c:/[ full ]/[ path ]/nmhost.bat"
             
             "path"              : "../../nmhost/nmhost.bat"
             
