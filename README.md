@@ -44,12 +44,13 @@ see the example directory for working example
 
 the extension is currently built for chrome based browsers on windows
 
-1. download
+1. <u>download</u>
 
 download the repository to a convenient location - https://github.com/javascript-2020/simple-nativemessage
 
 <br/>
-2. install extension
+
+2. <u>install extension</u>
 
 open *chrome://extensions*
 
