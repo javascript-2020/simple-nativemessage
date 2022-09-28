@@ -3,10 +3,10 @@
 this is a nodejs script, to be used for communicating between a browser extensions and a native message host
 
 
-v1.0  - a simple copy and paste solution, designed to be as simple as possible to highlight 
+**v1.0**  - a simple copy and paste solution, designed to be as simple as possible to highlight 
 the concepts
 
-v2.0  - used with `npm i simple-nativemessage`
+**v2.0**  - used with `npm i simple-nativemessage`
 
 ```
 

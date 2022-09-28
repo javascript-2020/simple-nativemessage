@@ -3,9 +3,9 @@
 
 //---   simple-nativemessaging-v1.0
 
-        var df        = true;
                                                                           debug('simple-nativemessaging - v1.0');
                                                                           debug('process : ',process.pid);
+                                                                          
         var buffer    = Buffer.alloc(0);
         
         process.stdin.on('readable',readable);
@@ -13,8 +13,11 @@
               
         
         function rec(json){
-                                                                          debug('--- rec ---\n',JSON.stringify(json,null,4),'\n---');
-                                                        
+                                                                          debug('--- rec\n',JSON.stringify(json,null,4),'\n---');
+              if(json.type==='hello'){
+                    send('world');
+              }
+              
         }//rec
 
         function send(json){
@@ -33,6 +36,7 @@
 
 
   //:
+
   
         function readable(){
         
@@ -50,23 +54,24 @@
               
               if(buffer.length<4)return;
           
-              var msglen    = buffer.readUInt32LE(0);
-              var datalen   = msglen+4;
+              var len   = buffer.readUInt32LE(0);
+              var end   = len+4;
           
-              if(buffer.length<datalen)return;
+              if(buffer.length<end)return;
 
               
-              var data      = buffer.slice(4,datalen);
+              var data      = buffer.slice(4,end);
+              buffer        = buffer.slice(end);
+              
               var str       = data.toString();
                                                                             //currently can only send objects from extension
                                                                             //
               var json      = JSON.parse(str);
               
-              buffer        = buffer.slice(datalen);
-              
               rec(json);
                                   
         }//readable
+
 
         function onend(){        
                                                                             debug('stdin closed - host disconnected');              
@@ -74,10 +79,10 @@
                 
 
   //:        
+
         
         function debug(str){
         
-              if(!df)return;
               var str   = Array.prototype.join.call(arguments,' ')+'\n';              
               process.stderr.write(str);
               
