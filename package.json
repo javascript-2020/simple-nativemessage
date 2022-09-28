@@ -18,10 +18,11 @@
                   "url"         : "https://github.com/javascript-2020/simple-nativemessage"
             },
             
-            "keywords"          : [
-                  "native message"
-            ],
-            
-            "author"        : "matthew richards"
+            "keywords"      : [
+                  "native","message","messaging","native message","native messaging","nativemessage","nativemessaging",
+                  "browser extension"
+            ]            
             
       }
+      
+      
