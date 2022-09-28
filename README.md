@@ -2,14 +2,40 @@
 
 this is a nodejs script, to be used as a native message host for web browser extensions
 
-the min version is designed to be as simple as possible to highlight the concepts
 
-v1.0 is as a simple copy and paste solution
+v1.0 - a simple copy and paste solution, designed to be as simple as possible to highlight 
+the concepts
+
 v2.0 used with npm i simple-nativemessage
 
 
 see the test directory for complete working examples
 
+
+
+```
+
+      var nmhost    = require('simple-nativemessage');
+      
+      nmhost.rec    = rec;
+      var debug     = nmhost.debug;
+      
+      
+      function rec(json){
+      
+            debug('rec',JSON.stringify(json,null,4));
+                                    
+            switch(json.type){
+            
+
+              case 'hello'    : nmhost.send('world');       break;
+              
+            }//switch
+
+      
+      }//rec
+
+```
 
 
 
@@ -34,6 +60,7 @@ the extension is designed to allow externallyconnectable from http://site.localh
 so the host file will need the entry
 
 *c:/Windows/System32/drivers/etc/hosts*
+
 */etc/hosts*
 
 127.0.0.1   site.localhost
