@@ -44,7 +44,12 @@ see the example directory for working example
 
 the extension is currently built for chrome based browsers on windows
 
+1. download
+
 download the repository to a convenient location - https://github.com/javascript-2020/simple-nativemessage
+
+
+2. install extension
 
 open *chrome://extensions*
 
@@ -54,16 +59,26 @@ click load unpacked
 
 navigate to ***example/ext*** and select folder
 
+
+3. setup extension
+
+find the extension named **simple-nativemessage example extension**
+
 copy the extension id
 
 paste the extension id into allow_origins value in ***example/ext/nmhost/nmhost-manifest.json***
 
 if using externally connectable ( see below ) paste the extension id into ***example/webpage/index.html***
 
+
+4. setup native messaging
+
 run ***example/ext/nmhost/install-nmhost.bat*** as administrator ( right-click 'Run as administrator' )
 
 this will create a registry key for the native messaging host, specifying the location of ***example/ext/nmhost/nmhost-manifest.json***
 
+
+5. optional, connect from webpage
 
 to use the externally connectable extension interface, which allows a webpage to communicate directly with the extension,
 the webpage must be served from at least a second level domain, for local servers this means editing the hosts file
@@ -82,17 +97,19 @@ so the host file will need the entry
 
 
 
-
-
-alternatively communication with the extension/native message host can be achieved using 
+communication with the extension/native message host can always be achieved using 
 the content script ***example/ext/content-script/content-script.js***
 
 
+6. start server
+
 open a cmd prompt
-navigate to ***example/webpage***
-run the server 
+navigate to ***example/webpage*** , run the server :
 
 `node server.js`
+
+
+7. test native message
 
 open chrome based browser at http://localhost:8081
 
@@ -101,10 +118,16 @@ or if using externally connectable http://site.localhost:8081
 
 ## uninstall
 
+1. remove extension
+
 open *chrome://extensions*
 
 find the extension named **simple-nativemessage example extension**
+
 click remove
+
+
+2. remove native messaging
 
 run ***example/ext/nmhost/uninstall-nmhost.bat*** as administrator ( right click 'Run as administrator' ) 
 
