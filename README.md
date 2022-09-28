@@ -92,7 +92,7 @@ the webpage must be served from at least a second level domain, for local server
 
 https://developer.chrome.com/docs/extensions/mv3/manifest/externally_connectable/
 
-the extension is designed to allow externally connectable from http://site.localhost/*
+the extension is designed to be externally connectable from > http://site.localhost/*
 so the host file will need the entry
 
 > 127.0.0.1   site.localhost
@@ -125,6 +125,15 @@ navigate to ***example/webpage*** , run the server :
 open chrome based browser at http://localhost:8081
 
 or if using externally connectable http://site.localhost:8081
+
+> content-script.js
+
+should be displayed, meaning the content script has been added to the page
+
+clicking test button under the content script, should print hello 
+
+then returning from the native message host, should print world
+
 
 
 ## uninstall
