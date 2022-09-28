@@ -73,11 +73,13 @@ https://developer.chrome.com/docs/extensions/mv3/manifest/externally_connectable
 the extension is designed to allow externally connectable from http://site.localhost/*
 so the host file will need the entry
 
+> 127.0.0.1   site.localhost
+
+
 *c:/Windows/System32/drivers/etc/hosts*
 
 */etc/hosts*
 
-127.0.0.1   site.localhost
 
 
 
