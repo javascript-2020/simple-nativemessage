@@ -44,13 +44,13 @@ see the example directory for working example
 
 the extension is currently built for chrome based browsers on windows
 
-1. <u>download</u>
+### 1. download
 
 download the repository to a convenient location - https://github.com/javascript-2020/simple-nativemessage
 
 <br/>
 
-2. <u>install extension</u>
+### 2. install extension
 
 open *chrome://extensions*
 
@@ -62,7 +62,8 @@ navigate to ***example/ext*** and select folder
 
 
 <br/>
-3. setup extension
+
+### 3. setup extension
 
 find the extension named **simple-nativemessage example extension**
 
@@ -74,7 +75,8 @@ if using externally connectable ( see below ) paste the extension id into ***exa
 
 
 <br/>
-4. setup native messaging
+
+### 4. setup native messaging
 
 run ***example/ext/nmhost/install-nmhost.bat*** as administrator ( right-click 'Run as administrator' )
 
@@ -82,7 +84,8 @@ this will create a registry key for the native messaging host, specifying the lo
 
 
 <br/>
-5. optional, connect from webpage
+
+### 5. optional, connect from webpage
 
 to use the externally connectable extension interface, which allows a webpage to communicate directly with the extension,
 the webpage must be served from at least a second level domain, for local servers this means editing the hosts file
@@ -106,7 +109,8 @@ the content script ***example/ext/content-script/content-script.js***
 
 
 <br/>
-6. start server
+
+### 6. start server
 
 open a cmd prompt
 navigate to ***example/webpage*** , run the server :
@@ -115,7 +119,8 @@ navigate to ***example/webpage*** , run the server :
 
 
 <br/>
-7. test native message
+
+### 7. test native message
 
 open chrome based browser at http://localhost:8081
 
@@ -124,7 +129,7 @@ or if using externally connectable http://site.localhost:8081
 
 ## uninstall
 
-1. remove extension
+### 1. remove extension
 
 open *chrome://extensions*
 
@@ -134,7 +139,8 @@ click remove
 
 
 <br/>
-2. remove native messaging
+
+### 2. remove native messaging
 
 run ***example/ext/nmhost/uninstall-nmhost.bat*** as administrator ( right click 'Run as administrator' ) 
 
