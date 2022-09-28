@@ -1,0 +1,45 @@
+
+
+
+      {
+            
+            "name"                : "simple-nativemessage example extension",
+            "version"             : "1.0",
+            "manifest_version"    : 3,
+
+            "background"          : {
+                  "service_worker"    : "ext.js"
+            },
+
+            
+            "permissions" : [
+                  "nativeMessaging"
+            ],
+
+            "externally_connectable"    : {
+                  "matches"   : ["http://site.localhost/*"]
+            },
+
+            "content_scripts"           : [
+                  {
+                        "matches"         : ["http://localhost:*/*"],
+                        "run_at"          : "document_idle",
+                        "js"              : ["content-script/content-script.js"]
+                  },
+                  {
+                        "matches"         : ["http://*/*"],
+                        "include_globs"   : ["http://127.0.*.1:*/*"],
+                        "run_at"          : "document_idle",
+                        "js"              : ["content-script/content-script.js"]
+                  }        
+            ],
+    
+                  
+            "icons"     : {
+                  "128"   : "icon/simple-nativemessage-icon.png"
+            }
+            
+      }
+      
+      
+      

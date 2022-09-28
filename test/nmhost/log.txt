@@ -1,0 +1,310 @@
+08:00
+myrec {
+    "type": "launch",
+    "name": "calc"
+}
+launch.calc
+process 2512
+"exit code : 0" 
+08:03
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 8624
+"exit code : 0" 
+08:03
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 3704
+"exit code : 0" 
+08:04
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 2700
+"exit code : 0" 
+08:10
+myrec {
+    "type": "launch",
+    "name": "calc"
+}
+launch.calc
+process 3620
+"exit code : 0" 
+08:10
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 11044
+"exit code : 0" 
+08:10
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 11032
+"exit code : 0" 
+08:11
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 10444
+"exit code : 0" 
+08:11
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 2100
+"exit code : 0" 
+08:11
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 11260
+"exit code : 0" 
+08:12
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 10784
+"exit code : 0" 
+08:13
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 10436
+"exit code : 0" 
+08:13
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 10772
+"exit code : 0" 
+08:14
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 10880
+"exit code : 0" 
+08:15
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 8536
+"exit code : 0" 
+08:15
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 2436
+"exit code : 0" 
+08:16
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 4368
+"exit code : 0" 
+08:17
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 6964
+"exit code : 0" 
+08:17
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 11180
+"exit code : 0" 
+08:18
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:18
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 2900
+"exit code : 0" 
+08:20
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 1896
+"exit code : 0" 
+08:21
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 9924
+"exit code : 0" 
+08:21
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 7576
+"exit code : 0" 
+08:21
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 5128
+"exit code : 0" 
+08:21
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 2236
+"exit code : 0" 
+08:26
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+process 7772
+"exit code : 0" 
+08:35
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:36
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:36
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:36
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:37
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:38
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+"exit code : 0" 
+08:38
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated2
+08:40
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated
+"exit code : 0" 
+08:40
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated
+"exit code : 0" 
+08:40
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated
+"exit code : 0" 
+08:48
+myrec {
+    "type": "hello"
+}
+"exit code : 0" 
+08:48
+myrec {
+    "type": "launch",
+    "name": "calc"
+}
+launch.calc
+process 10584
+"exit code : 0" 
+08:48
+myrec {
+    "type": "launch",
+    "name": "elevated"
+}
+elevated
+process 10752
+"exit code : 0" 
+08:50
+myrec {
+    "type": "hello"
+}
+"exit code : 0" 

@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+      <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>simple-nativemessage-test</title>
+            <style>
+                  body {
+                        margin-left:20px;
+                  }
+            </style>
+      </head>
+      <body>
+      
+            <br>
+            <h3>externally connectable</h3>
+            <input id=btn1 value=hello type=button />
+            <input id=calc1 value=calc type=button />
+            <input id=elevated1 value=elevated type=button />
+            <br>
+            <h3>content script</h3>
+            <input id=btn2 value=hello type=button />
+            <input id=calc2 value=calc type=button />
+            <input id=elevated2 value=elevated type=button />
+            <br>
+            <br>
+            
+            <pre id=output></pre>
+            
+            <script>
+                                                                      log('ready');
+                                                                      
+                  var extension_id     = 'hjeofleaeacomddpihpjdpnnbhheihdo';
+                  
+                                                                      log('externallyconnectable extension id :',extid);
+
+                                                                      
+                  btn1.onclick    = e=>{
+                                                                      log('hello');
+                        externallyconnectable({type:'hello'});
+                        
+                  };
+                  
+                  calc1.onclick   = e=>{
+                                                                      log('launch calc');
+                        externallyconnectable({type:'launch',name:'calc'});
+                        
+                  };
+
+                  elevated1.onclick   = e=>{
+                                                                      log('launch elevated');
+                        externallyconnectable({type:'launch',name:'elevated'});
+                        
+                  };
+
+                  
+                  function externallyconnectable(message){
+                        
+                        chrome.runtime.sendMessage(extension_id,message,complete);
+                        
+                        function complete(response){
+                        
+                              console.log(response);
+                              
+                        }//complete
+                  
+                  }//externallyconnectable
+
+
+                  function log(){
+                  
+                        var str   = Array.prototype.join.call(arguments,' ');
+                        
+                        console.log('index.html',str);
+                        
+                        str      += '\n';
+                        var tn    = document.createTextNode(str);
+                        output.appendChild(tn);
+                        
+                  }//log
+                  
+            </script>
+      </body>
+</html>
