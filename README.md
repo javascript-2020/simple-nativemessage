@@ -11,9 +11,9 @@ the concepts
 ```
 
       var nmhost    = require('simple-nativemessage');
+      var debug     = nmhost.debug;
       
       nmhost.rec    = rec;
-      var debug     = nmhost.debug;
       
       
       function rec(json){
