@@ -11,9 +11,9 @@ simple-nativemessage/example/nmhost/nmhost-v2.0.js
 */
 
         var nmhost    = require('../../v2.0/simple-nativemessage-v2.0.js');
+        var debug     = nmhost.debug;
         
         nmhost.rec    = rec;
-        var debug     = nmhost.debug;
 
 
 
