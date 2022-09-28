@@ -8,7 +8,7 @@ c:/Windows/System32/drivers/etc/hosts
 
 */
                                                                         console.log('simple-nativemessage/test/webpage/server.js');
-                                                                        console.log(process.pid);
+                                                                        console.log('process : ',process.pid);
         var port      = 8081;
         
         var http      = require('http');

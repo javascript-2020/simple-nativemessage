@@ -3,7 +3,7 @@
 
 /*
 
-simple-nativemessage/test/ext/content-script.js
+example/ext/content-script.js
 
 27-09-22
 
@@ -13,7 +13,7 @@ simple-nativemessage/test/ext/content-script.js
 
 ;
 (function(){
-                                                                    console.log('simple-nativemessage/test/ext/content-script/content-script.js');
+                                                                    console.log('example/ext/content-script/content-script.js');
 
 
         if(document.title!=='simple-nativemessage-test'){
