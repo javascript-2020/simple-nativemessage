@@ -44,6 +44,8 @@ see the example directory for working example
 
 the extension is currently built for chrome based browsers on windows
 
+<br>
+
 ### 1. download
 
 download the repository to a convenient location - https://github.com/javascript-2020/simple-nativemessage
@@ -140,9 +142,13 @@ or if using externally connectable http://site.localhost:8081
 
 should be displayed, meaning the content script has been added to the page
 
-clicking test button under the content script, should print hello 
+<br>
+
+clicking the test button under the content script, should print hello 
 
 then returning from the native message host, should print world
+
+native messaging is working
 
 <br>
 
