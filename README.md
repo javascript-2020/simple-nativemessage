@@ -1,6 +1,6 @@
-# simple-nativemessaging
+# simple-nativemessage
 
-this is a nodejs script, to be used as a native message host for web browser extensions
+this is a nodejs script, to be used for communicating between a browser extensions and a native message host
 
 
 v1.0  - a simple copy and paste solution, designed to be as simple as possible to highlight 
