@@ -135,6 +135,7 @@ open chrome based browser at http://localhost:8081
 or if using externally connectable http://site.localhost:8081
 
 <br/>
+
 > content-script.js
 
 should be displayed, meaning the content script has been added to the page
@@ -142,6 +143,14 @@ should be displayed, meaning the content script has been added to the page
 clicking test button under the content script, should print hello 
 
 then returning from the native message host, should print world
+
+<br>
+
+calculator launches the calculator app that comes with all versions of window
+
+elevated launches the calculator with elevated permissions
+
+launching applications like these is a common use for native messaging
 
 
 
