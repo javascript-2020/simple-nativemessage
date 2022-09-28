@@ -3,7 +3,7 @@
 
 /*
 
-simple-nativemessage/example/nmhost-v2.0.js
+simple-nativemessage/example/nmhost/nmhost-v2.0.js
 
 26-09-22
 
@@ -79,7 +79,7 @@ simple-nativemessage/example/nmhost-v2.0.js
                                                                         debug('launch.simpleserver');
         
               var cmd     = 'simple-server';
-              var cwd     = 'c:\\work\\selfedits.dev.internetservicesltd.co.uk\\www\\servers\\simple-server\\v1.2\\';
+              var cwd     = 'c:\\wwebsites\\example\\www\\';
               
               launch.process(cmd,cwd);
               

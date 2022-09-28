@@ -8,11 +8,6 @@ the concepts
 
 v2.0  - used with npm i simple-nativemessage
 
-
-see the example directory for working example
-
-
-
 ```
 
       var nmhost    = require('simple-nativemessage');
@@ -37,8 +32,11 @@ see the example directory for working example
 ```
 
 
+see the example directory for working example
 
-# chrome extension
+
+
+# example chrome extension
 
 ## install
 
@@ -67,6 +65,7 @@ see the example directory for working example
   
   to use the externally connectable extension interface, the webpage must be served from
   at least a second level domain, for local servers this means editing the hosts file
+  
   the extension is designed to allow externally connectable from http://site.localhost/*
   so the host file will need the entry
 
@@ -88,7 +87,7 @@ open a cmd prompt
 navigate to ***example/webpage***
 run the server 
 
-`node server`
+`node server.js`
 
 open chrome based browser at http://localhost:8081
 
@@ -99,9 +98,17 @@ or if using externally connectable http://site.localhost:8081
 
 open *chrome://extensions*
 
+find the extension named **simple-nativemessage example extension**
 click remove
 
-run ***example/ext/nmhost/uninstall-nmhost.bat***
+run ***example/ext/nmhost/uninstall-nmhost.bat*** as administrator ( right click 'Run As Administrator' ) 
+
+this will remove the previously created registry key
+
+
+
+
+
 
 
 

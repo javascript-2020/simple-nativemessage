@@ -3,7 +3,7 @@
 
 /*
 
-simple-nativemessage/example/nmhost.js
+simple-nativemessage/example/nmhost/nmhost-v1.0.js
 
 26-09-22
 
@@ -23,104 +23,15 @@ simple-nativemessage/example/nmhost.js
                                                               debug('rec',JSON.stringify(json,null,4));
               switch(json.type){
               
-
                 case 'hello'    : send('world');              break;
-                
-                case 'launch'   : launch(json);               break;
-
                 
               }//switch
         
         }//rec
 
 
-
         
-        var child_process   = require('node:child_process');
-
-        
-        function launch(json){
-
-              switch(json.name){
-              
-                case 'calc'             : launch.calc();            break;
-                case 'elevated'         : launch.elevated();        break;
-                
-                case 'simple-server'    : launch.simpleserver();    break;
-                
-              }//switch
-              
-        }//launch
-
-        
-        launch.calc=function(){
-                                                      debug('launch.calc');
-              var cmd   = 'calc';
-              launch.process(cmd);
-              
-        }//launch.calc
-        
-        launch.simpleserver=function(){        
-                                                                        debug('launch.simpleserver');
-        
-              var cmd     = 'simple-server';
-              var cwd     = 'c:\\work\\selfedits.dev.internetservicesltd.co.uk\\www\\servers\\simple-server\\v1.2\\';
-              
-              launch.process(cmd,cwd);
-              
-        }//simpleserver
-
-
-        launch.process=function(cmd,cwd){
-        
-              var args    = [];
-              
-              var opts    = {
-                    cwd         : cwd,
-                    detached    : true,
-                    stdio       : 'ignore'
-              };
-              
-              var process   = child_process.spawn(cmd,args,opts);
-              var pid       = process.pid;
-              process.unref();
-                                                                          debug('process',pid);
-              send('ok, process : '+pid);
-        
-        }//process
-
-        
-        launch.elevated=function(){
-                                                                          debug('elevated');
-
-              var cmd   = 'calc';
-              var cwd;
-              
-              cmd       = 'start-process '+cmd+' -verb runas';
-              
-              var opts    = {
-                    cwd         : cwd,
-                    shell       : 'powershell.exe',
-                    detached    : true,
-                    stdio       : 'ignore'
-
-              };
-
-              var process       = child_process.exec(cmd,opts);
-              process.unref();
-              
-              var pid       = process.pid;
-                                                                          debug('process',pid);                                                                      
-              send('ok pid : '+pid);
-              
-        }//elevated
-
-
-
-
-
-        
-//---   simple-nativemessaging-v1.0
+//---   v1.0/simple-nativemessaging-v1.0.js
 
 
         var df        = true;
