@@ -80,7 +80,11 @@ if using externally connectable ( see below ) paste the extension id into ***exa
 
 run ***example/ext/nmhost/install-nmhost.bat*** as administrator ( right-click 'Run as administrator' )
 
-this will create a registry key for the native messaging host, specifying the location of ***example/ext/nmhost/nmhost-manifest.json***
+this will create a registry key for the native messaging host, under 
+
+> HKLM\Software\Google\Chrome\NativeMessagingHosts\
+
+specifying the location of ***example/ext/nmhost/nmhost-manifest.json***
 
 
 <br/>
@@ -92,7 +96,10 @@ the webpage must be served from at least a second level domain, for local server
 
 https://developer.chrome.com/docs/extensions/mv3/manifest/externally_connectable/
 
-the extension is designed to be externally connectable from > http://site.localhost/*
+the extension is designed to be externally connectable from 
+
+> ht<span>tp://</span>site.localhost/*
+
 so the host file will need the entry
 
 > 127.0.0.1   site.localhost
@@ -103,6 +110,7 @@ so the host file will need the entry
 */etc/hosts*
 
 
+<br>
 
 communication with the extension/native message host can always be achieved using 
 the content script ***example/ext/content-script/content-script.js***
@@ -126,6 +134,7 @@ open chrome based browser at http://localhost:8081
 
 or if using externally connectable http://site.localhost:8081
 
+<br/>
 > content-script.js
 
 should be displayed, meaning the content script has been added to the page
