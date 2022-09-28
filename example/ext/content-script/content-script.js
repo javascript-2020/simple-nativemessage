@@ -21,7 +21,7 @@ example/ext/content-script.js
               return;
         }
         
-                                                                    log('content-script.js');
+                                                                    log('example/ext/content-script/content-script.js');
 
         var btn        = document.getElementById('btn2');
         btn.onclick    = e=>{
