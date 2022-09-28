@@ -41,23 +41,21 @@ see the test directory for complete working examples
 
 # chrome extension
 
-the extension is currently built for chrome based browsers on windows
-
-download the repository https://github.com/javascript-2020/simple-nativemessage
-
-open *chrome://extensions*
-in the top right, switch to developer mode
-click load unpacked
-navigate to *test/ext* and select folder
-copy the extension id
-paste the extension id into allow_origins value in *test/ext/nmhost/nmhost-manifest.json*
-if using externall connectable ( see below ) paste the extension id into *test/webpage/index.html*
-run *ext/nmhost/install-nmhost.bat* as administrator
-
-to use the externally connectable extension interface, the webpage must be served from
-at least a second level domain, for local servers this means editing the hosts file
-the extension is designed to allow externallyconnectable from http://site.localhost/*
-so the host file will need the entry
+  the extension is currently built for chrome based browsers on windows
+  download the repository https://github.com/javascript-2020/simple-nativemessage
+  open *chrome://extensions*
+  in the top right, switch to developer mode
+  click load unpacked
+  navigate to *test/ext* and select folder
+  copy the extension id
+  paste the extension id into allow_origins value in *test/ext/nmhost/nmhost-manifest.json*
+  if using externall connectable ( see below ) paste the extension id into *test/webpage/index.html*
+  run *ext/nmhost/install-nmhost.bat* as administrator
+  
+  to use the externally connectable extension interface, the webpage must be served from
+  at least a second level domain, for local servers this means editing the hosts file
+  the extension is designed to allow externallyconnectable from http://site.localhost/*
+  so the host file will need the entry
 
 *c:/Windows/System32/drivers/etc/hosts*
 
