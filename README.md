@@ -6,7 +6,7 @@ this is a nodejs script, to be used as a native message host for web browser ext
 v1.0  - a simple copy and paste solution, designed to be as simple as possible to highlight 
 the concepts
 
-v2.0  - used with npm i simple-nativemessage
+v2.0  - used with `npm i simple-nativemessage`
 
 ```
 
